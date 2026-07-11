@@ -16,14 +16,15 @@ Developed by **Brain Lead** — [@brain_lead](https://t.me/brain_lead)
 - [Overview](#-overview)
 - [Features](#-features)
 - [Supported Countries](#-supported-countries)
-- [Tabs & Modules](#-tabs--modules)
+- [Tabs &amp; Modules](#-tabs--modules)
+  - [Dynamic HLR Lookup](#-dynamic-hlr-lookup)
   - [Carrier Lookup](#-carrier-lookup)
   - [Line Type Checker](#-line-type-checker)
   - [Location Lookup](#-location-lookup)
   - [Combined Lookup](#-combined-lookup)
   - [Number Generator](#-number-generator)
 - [Output Formats](#-output-formats)
-- [Filtering & Export](#-filtering--export)
+- [Filtering &amp; Export](#-filtering--export)
 - [Auto-Save System](#-auto-save-system)
 - [Licensing](#-licensing)
 - [System Requirements](#-system-requirements)
@@ -31,7 +32,7 @@ Developed by **Brain Lead** — [@brain_lead](https://t.me/brain_lead)
 - [Getting Started](#-getting-started)
 - [FAQ](#-faq)
 - [Disclaimer](#%EF%B8%8F-disclaimer)
-- [Contact & Support](#-contact--support)
+- [Contact &amp; Support](#-contact--support)
 
 ---
 
@@ -41,6 +42,8 @@ Hope Phone Intelligence is a desktop application that provides real-time phone n
 
 For the United States, Canada, and the United Kingdom, the application uses a high-performance **offline database** containing 370,000+ prefix records for instant lookups with no API dependency. For all other supported countries, lookups are performed via the integrated `phonenumbers` library.
 
+For **live, real-time accuracy**, the new **Dynamic HLR Lookup** module queries mobile networks directly through the Home Location Register (HLR) — returning the number's **live status** (active / disconnected / unreachable), its **true current carrier** (accounting for number porting), **ported / roaming** status, and network details, for numbers **worldwide**. This goes far beyond static prefix data, which cannot detect porting or whether a line is actually live.
+
 The built-in **Number Generator** can produce bulk phone numbers filtered by area code, carrier, state, and line type — ideal for telecommunications research, data validation, and number plan analysis.
 
 ---
@@ -48,29 +51,35 @@ The built-in **Number Generator** can produce bulk phone numbers filtered by are
 ## ✨ Features
 
 ### Core Intelligence
+
+- **Dynamic HLR Lookup** — Real-time Home Location Register query against live mobile networks. Confirms whether a number is **active, disconnected, or unreachable**, reveals the **true current carrier** after porting, and detects **ported** and **roaming** status — worldwide, for any network
 - **Carrier Detection** — Identify the telecom operator for any phone number (Verizon, AT&T, T-Mobile, Vodafone, EE, etc.)
 - **Line Type Classification** — Determine if a number is Mobile, Landline, VoIP, or Unknown
 - **Location Mapping** — Resolve numbers to city and state/province (US/Canada) or country-level location
 - **Combined Analysis** — Run all three lookups simultaneously with multi-dimensional filtering
 
 ### Number Generation
+
 - **Manual Mode** — Generate numbers by area code, prefix, and count for any country
 - **Smart Gen Mode** — Generate numbers filtered by specific carrier, state/region, and line type (US/Canada/UK)
 - **Line Type Filtering** — Include or exclude Mobile, Landline, VoIP, and Unknown types during generation
 
 ### Data & Performance
+
 - **Offline Database** — 200,000+ US, 44,000+ Canada, and 126,000+ UK prefix records
 - **Bulk Processing** — Handle hundreds of thousands of numbers per session
 - **Progress Tracking** — Real-time progress bar and statistics during processing
 - **Carrier Normalization** — Automatically groups subsidiaries under parent carriers (e.g., Cellco Partnership → Verizon, New Cingular → AT&T, Omnipoint → T-Mobile)
 
 ### Export & Save
+
 - **Cross-Tab Export** — Send filtered results from any tab to any other tab for further analysis
 - **Auto-Save** — Automatically saves results organized by carrier, line type, or location
 - **Manual Save** — Save all results or only filtered/visible rows
 - **Multiple Formats** — Save as plain text (numbers only) or CSV with full details
 
 ### Interface
+
 - **Dark Theme UI** — Professional dark interface optimized for extended use
 - **Color-Coded Results** — Green (Mobile), Yellow (Landline), Purple (VoIP), Red (Not Found)
 - **Responsive Layout** — Resizable window with minimum 800×600, scales to any screen size
@@ -81,13 +90,15 @@ The built-in **Number Generator** can produce bulk phone numbers filtered by are
 ## 🌍 Supported Countries
 
 ### Full Offline Database (Instant Lookups)
-| Country | Prefix Records | Data Includes |
-|---------|---------------|---------------|
-| 🇺🇸 United States | 200,000+ | Carrier, Line Type, City, State |
-| 🇨🇦 Canada | 44,000+ | Carrier, Exchange Area, Province |
-| 🇬🇧 United Kingdom | 126,000+ | Carrier, Line Type |
+
+| Country             | Prefix Records | Data Includes                    |
+| ------------------- | -------------- | -------------------------------- |
+| 🇺🇸 United States  | 200,000+       | Carrier, Line Type, City, State  |
+| 🇨🇦 Canada         | 44,000+        | Carrier, Exchange Area, Province |
+| 🇬🇧 United Kingdom | 126,000+       | Carrier, Line Type               |
 
 ### Phonenumbers Library (60+ Countries)
+
 Carrier detection, line type, and location via the `phonenumbers` library for:
 
 🇦🇺 Australia · 🇩🇪 Germany · 🇫🇷 France · 🇮🇹 Italy · 🇪🇸 Spain · 🇳🇱 Netherlands · 🇧🇪 Belgium · 🇨🇭 Switzerland · 🇦🇹 Austria · 🇸🇪 Sweden · 🇳🇴 Norway · 🇩🇰 Denmark · 🇫🇮 Finland · 🇵🇱 Poland · 🇨🇿 Czech Republic · 🇮🇪 Ireland · 🇵🇹 Portugal · 🇬🇷 Greece · 🇭🇺 Hungary · 🇷🇴 Romania · 🇧🇬 Bulgaria · 🇭🇷 Croatia · 🇷🇸 Serbia · 🇮🇳 India · 🇵🇰 Pakistan · 🇧🇩 Bangladesh · 🇱🇰 Sri Lanka · 🇳🇵 Nepal · 🇦🇫 Afghanistan · 🇨🇳 China · 🇯🇵 Japan · 🇰🇷 South Korea · 🇹🇼 Taiwan · 🇭🇰 Hong Kong · 🇸🇬 Singapore · 🇲🇾 Malaysia · 🇮🇩 Indonesia · 🇹🇭 Thailand · 🇻🇳 Vietnam · 🇵🇭 Philippines · 🇧🇷 Brazil · 🇲🇽 Mexico · 🇦🇷 Argentina · 🇨🇴 Colombia · 🇨🇱 Chile · 🇵🇪 Peru · 🇻🇪 Venezuela · 🇿🇦 South Africa · 🇳🇬 Nigeria · 🇰🇪 Kenya · 🇪🇬 Egypt · 🇲🇦 Morocco · 🇩🇿 Algeria · 🇸🇦 Saudi Arabia · 🇦🇪 UAE · 🇶🇦 Qatar · 🇰🇼 Kuwait · 🇮🇱 Israel · 🇹🇷 Turkey · 🇷🇺 Russia · 🇺🇦 Ukraine · 🇰🇿 Kazakhstan · 🇳🇿 New Zealand
@@ -95,6 +106,22 @@ Carrier detection, line type, and location via the `phonenumbers` library for:
 ---
 
 ## 🗂 Tabs & Modules
+
+### 📡 Dynamic HLR Lookup
+
+Performs a **live, real-time query** against mobile networks via the Home Location Register (HLR) — the carrier database that holds the current status of every active SIM. Unlike static prefix lookups, HLR returns what is **true right now**, including changes from number porting.
+
+- **Input**: Paste or load phone numbers (one per line), in international format
+- **Live Status**: Detects whether each number is **Active / Live**, **Disconnected / Dead**, or **Unreachable / Absent**
+- **True Current Carrier**: Returns the real serving network **after porting** — not the original prefix owner
+- **Ported Detection**: Flags numbers that have been moved from their original carrier
+- **Roaming Status**: Indicates whether the subscriber is currently roaming, and the visited network/country
+- **Network Details**: Resolves country (MCC), network (MNC), and network name for the live carrier
+- **Global Coverage**: Works for numbers **worldwide**, independent of the offline database countries
+- **Filter**: Filter results by status, carrier, ported, or country
+- **Auto-Save**: Saves split by live status (e.g., `results/hlr/active.txt`, `results/hlr/dead.txt`, `results/hlr/ported.txt`)
+
+> 💡 **Why it matters:** Offline databases tell you who a prefix *was* assigned to. Dynamic HLR tells you whether the line is **live**, who *actually* serves it today, and whether it has been **ported** — the accuracy that matters for validation, deliverability, and cleaning lists.
 
 ### 🏢 Carrier Lookup
 
@@ -146,6 +173,7 @@ Runs carrier, line type, and location lookups simultaneously.
 Generates bulk phone numbers with two modes:
 
 #### Manual Mode (All Countries)
+
 - **Area Codes**: Enter comma-separated area codes, or leave empty to auto-select from database
 - **Prefixes**: Optional NXX prefixes to constrain generation
 - **Count**: Number of phone numbers to generate
@@ -153,13 +181,16 @@ Generates bulk phone numbers with two modes:
 - **Line Type Filter**: Checkboxes to include/exclude Mobile, Landline, VoIP, Unknown (US/Canada/UK only)
 
 #### Smart Gen Mode (US / Canada / UK)
+
 - **Carrier Filter**: Generate numbers only for a specific carrier (e.g., Verizon, AT&T, T-Mobile, Vodafone, EE)
 - **State/Region Filter**: Generate numbers only from a specific state or province
 - **Line Type Filter**: Generate only Mobile, Landline, or VoIP numbers
 - **Count**: Number of phone numbers to generate
 
 #### Export
+
 Generated numbers can be exported directly to any lookup tab:
+
 - 🔗 Combined
 - 🏢 Carrier
 - 📶 Line Type
@@ -172,37 +203,43 @@ Generated numbers can be exported directly to any lookup tab:
 The format dropdown dynamically updates based on the selected country:
 
 ### US / Canada (+1)
-| Format | Example |
-|--------|---------|
-| `XXXXXXXXXX` | `2015551234` |
-| `+1XXXXXXXXXX` | `+12015551234` |
-| `1XXXXXXXXXX` | `12015551234` |
+
+| Format             | Example            |
+| ------------------ | ------------------ |
+| `XXXXXXXXXX`     | `2015551234`     |
+| `+1XXXXXXXXXX`   | `+12015551234`   |
+| `1XXXXXXXXXX`    | `12015551234`    |
 | `(XXX) XXX-XXXX` | `(201) 555-1234` |
-| `XXX-XXX-XXXX` | `201-555-1234` |
+| `XXX-XXX-XXXX`   | `201-555-1234`   |
 
 ### UK (+44)
-| Format | Example |
-|--------|---------|
-| `XXXXXXXXXXX` | `7911123456` |
+
+| Format             | Example           |
+| ------------------ | ----------------- |
+| `XXXXXXXXXXX`    | `7911123456`    |
 | `+44XXXXXXXXXXX` | `+447911123456` |
-| `0XXXXXXXXXXX` | `07911123456` |
+| `0XXXXXXXXXXX`   | `07911123456`   |
 
 ### Other Countries
-| Format | Example |
-|--------|---------|
-| `XXXXXXXXXXX` | Raw digits |
+
+| Format                 | Example           |
+| ---------------------- | ----------------- |
+| `XXXXXXXXXXX`        | Raw digits        |
 | `+[code]XXXXXXXXXXX` | With country code |
-| `0XXXXXXXXXXX` | With leading zero |
+| `0XXXXXXXXXXX`       | With leading zero |
 
 ---
 
 ## 🔀 Filtering & Export
 
 ### Filtering
+
 Every lookup tab has a filter dropdown that updates dynamically after each run. Select a specific carrier, line type, or location to show only matching rows. The Combined tab has independent filters for all three dimensions plus a Valid/Unknown radio selector.
 
 ### Cross-Tab Export
+
 Every lookup tab (Carrier, Line Type, Location) includes export buttons in the results panel:
+
 - **🔗 Combined** — Send visible numbers to Combined tab
 - **📍 Location** — Send visible numbers to Location tab
 - **📶 Line Type** — Send visible numbers to Line Type tab
@@ -211,6 +248,7 @@ Every lookup tab (Carrier, Line Type, Location) includes export buttons in the r
 Export respects the current filter — if you filter to "Verizon" and export, only Verizon numbers are sent.
 
 ### Save Options
+
 - **💾 Save Results** — Save all results to a file
 - **💾 Save Filtered** — Save only the currently visible/filtered rows
 - **Save numbers only** — Checkbox to save just phone numbers (one per line) or full details
@@ -224,6 +262,10 @@ Results are automatically saved to organized folders after each lookup:
 
 ```
 results/
+├── hlr/
+│   ├── active.txt
+│   ├── dead.txt
+│   └── ported.txt
 ├── carrier/
 │   ├── verizon.txt
 │   ├── att.txt
@@ -252,23 +294,28 @@ The auto-save path is configurable per tab via the "Auto-save to:" field.
 Hope Phone Intelligence uses a hardware-bound license system.
 
 ### Trial Mode
+
 - Available for evaluation purposes
 - Limited to **50,000 numbers** per session
 - Trial banner displayed in the header
 
 ### Pro License
+
 - **Unlimited** number processing and generation
 - All features unlocked
 - License is bound to your hardware (one device per license)
 - Purchase via [@brain_lead on Telegram](https://t.me/brain_lead)
 
 ### License Activation
+
 1. Click the **🔑 Activate** button in the trial banner, or
 2. Enter your license key in the activation dialog
 3. License is validated and bound to your system
 
 ### License Binding Reset
+
 If you need to move your license to a new machine:
+
 - The application automatically detects binding conflicts on startup
 - A reset dialog will appear allowing you to unbind from the previous system
 - After reset, the license is reactivated on your current machine
@@ -279,12 +326,12 @@ If you need to move your license to a new machine:
 
 ## 💻 System Requirements
 
-| Requirement | Minimum |
-|-------------|---------|
-| **OS** | Windows 10/11 (64-bit) |
-| **RAM** | 4 GB |
-| **Disk** | 200 MB free space |
-| **Display** | 800×600 minimum resolution |
+| Requirement        | Minimum                                     |
+| ------------------ | ------------------------------------------- |
+| **OS**       | Windows 10/11 (64-bit)                      |
+| **RAM**      | 4 GB                                        |
+| **Disk**     | 200 MB free space                           |
+| **Display**  | 800×600 minimum resolution                 |
 | **Internet** | Required for license validation and updates |
 
 ---
@@ -292,12 +339,14 @@ If you need to move your license to a new machine:
 ## 📦 Installation
 
 ### Windows (Compiled Executable)
+
 1. Download `gui.exe` from the authorized distribution channel
 2. Place it in a folder with the included `data/` directory and `config/` directory
 3. Run `gui.exe`
 4. Activate your license when prompted
 
 ### Directory Structure
+
 ```
 hope-validator/
 ├── gui.exe                  # Main application
@@ -328,6 +377,7 @@ hope-validator/
 7. **Export** to other tabs or **Save** to file
 
 ### Quick Workflow Example
+
 1. Go to **🔢 Generator** → Enter area codes `201, 301, 404` → Set count to `100000` → Click ⚡ Generate
 2. Click **🔗 Combined** export button → Numbers are sent to Combined tab
 3. In Combined tab, click **▶ Run** → All numbers are analyzed
@@ -342,7 +392,10 @@ hope-validator/
 A: Lookups for US, Canada, and UK work fully offline. Other countries require the `phonenumbers` library. License validation requires internet on first launch.
 
 **Q: How accurate is the carrier data?**
-A: The offline database is sourced from official NPA-NXX assignment records. Accuracy depends on the data source and does not account for number porting (numbers transferred between carriers).
+A: The offline database is sourced from official NPA-NXX assignment records and reflects the *original* prefix assignment. For **live, porting-aware accuracy** — the true current carrier and whether a line is active — use the **Dynamic HLR Lookup** module, which queries the network in real time.
+
+**Q: Does it detect number porting and whether a number is live?**
+A: Yes — the **Dynamic HLR Lookup** module performs a real-time network query that returns the number's live status (active / disconnected / unreachable), its true current carrier after porting, and roaming status. The offline database alone does not account for porting.
 
 **Q: Can I process numbers from multiple countries at once?**
 A: Select the target country from the dropdown before running. To process multiple countries, run separate batches for each.
@@ -365,12 +418,15 @@ A: Check your internet connection. If the issue persists, contact [@brain_lead](
 By downloading, installing, or using Hope Phone Intelligence (hereinafter referred to as "the Software"), you acknowledge that you have read, understood, and agree to be bound by the following terms:
 
 ### Purpose
+
 The Software is provided for **educational, experimental, research, and legitimate business purposes only**. It is designed to assist in lawful telecommunications analysis, number plan research, and data validation activities conducted with proper authorization and consent.
 
 ### No Warranty
+
 THE SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS, COPYRIGHT HOLDERS, OR DEVELOPER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ### User Responsibility
+
 You, the user, are **solely and entirely responsible** for your use of the Software and any consequences arising from such use. This includes, but is not limited to:
 
 - **Complying with ALL applicable local, state, national, and international laws**, regulations, and industry standards related to your use of the Software, including but not limited to data privacy laws (GDPR, CCPA, TCPA, etc.), electronic communications regulations, anti-spam legislation, and telecommunications regulations.
@@ -380,7 +436,9 @@ You, the user, are **solely and entirely responsible** for your use of the Softw
 - **Protecting your own credentials, data, and systems** from unauthorized access.
 
 ### Prohibited Uses
+
 The Software shall **NOT** be used for:
+
 - Any illegal, fraudulent, or malicious activity
 - Harassment, stalking, or invasion of privacy
 - Unsolicited communications (spam) in violation of applicable laws
@@ -389,13 +447,17 @@ The Software shall **NOT** be used for:
 - Any purpose that could cause harm to individuals, organizations, or telecommunications infrastructure
 
 ### Data Accuracy
+
 The developer makes **no guarantees** regarding the accuracy, completeness, or timeliness of the data provided by the Software. Phone number assignments, carrier information, and location data may change without notice. Number portability means that carrier information may not reflect the current service provider. Users should independently verify any critical data.
 
 ### Hardware Authorization
+
 The Software incorporates a Hardware ID (HWID) authorization mechanism. You acknowledge that this feature is in place to manage access to the Software and that unauthorized use, redistribution, or circumvention of this mechanism is strictly prohibited.
 
 ### Intellectual Property
+
 This Software is **proprietary and closed-source**. All intellectual property rights, including but not limited to copyrights, trademarks, trade secrets, and patents, are owned by the developer. You are granted a limited, non-exclusive, non-transferable license to use the Software subject to these terms. You may NOT:
+
 - Copy, reproduce, or distribute the Software
 - Modify, adapt, translate, or create derivative works
 - Reverse engineer, decompile, disassemble, or attempt to derive the source code
@@ -403,30 +465,35 @@ This Software is **proprietary and closed-source**. All intellectual property ri
 - Sublicense, rent, lease, or lend the Software to any third party
 
 ### Indemnification
+
 By using the Software, you agree to **indemnify, defend, and hold harmless** the developer (Brain Lead) from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from:
+
 - Your use or misuse of the Software
 - Your breach of this Disclaimer or any applicable law
 - Any third-party claims related to your use of the Software
 - Any data breach or security incident resulting from your use of the Software
 
 ### Limitation of Liability
+
 IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM YOUR USE OF OR INABILITY TO USE THE SOFTWARE, REGARDLESS OF WHETHER THE DEVELOPER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 ### Governing Law
+
 This Disclaimer shall be governed by and construed in accordance with applicable laws. Any disputes arising from the use of this Software shall be resolved through appropriate legal channels.
 
 ### Acceptance
+
 **By downloading, installing, launching, or using the Software in any way, you indicate that you have read, understood, and agreed to ALL terms of this Disclaimer.** If you do not agree to these terms, you must immediately cease all use of the Software and delete all copies in your possession.
 
 ---
 
 ## 📞 Contact & Support
 
-| Channel | Link |
-|---------|------|
-| **Telegram** | [@brain_lead](https://t.me/brain_lead) |
+| Channel                    | Link                                  |
+| -------------------------- | ------------------------------------- |
+| **Telegram**         | [@brain_lead](https://t.me/brain_lead) |
 | **Purchase License** | [@brain_lead](https://t.me/brain_lead) |
-| **Bug Reports** | [@brain_lead](https://t.me/brain_lead) |
+| **Bug Reports**      | [@brain_lead](https://t.me/brain_lead) |
 
 ---
 
