@@ -1,4 +1,4 @@
-# 📡 Hope Phone Intelligence v1.0
+# 📡 Brain Carrier Lookup v1.0
 
 **Advanced Phone Number Intelligence Suite — Carrier Detection, Line Type Classification, Location Mapping & Smart Number Generation**
 
@@ -38,7 +38,7 @@ Developed by **Brain Lead** — [@brain_lead](https://t.me/brain_lead)
 
 ## 🔍 Overview
 
-Hope Phone Intelligence is a desktop application that provides real-time phone number intelligence. It identifies the **carrier/operator**, **line type** (Mobile, Landline, VoIP), and **geographic location** for phone numbers across 60+ countries.
+Brain Carrier Lookup is a desktop application that provides real-time phone number intelligence. It identifies the **carrier/operator**, **line type** (Mobile, Landline, VoIP), and **geographic location** for phone numbers across 60+ countries.
 
 For the United States, Canada, and the United Kingdom, the application uses a high-performance **offline database** containing 370,000+ prefix records for instant lookups with no API dependency. For all other supported countries, lookups are performed via the integrated `phonenumbers` library.
 
@@ -89,13 +89,7 @@ The built-in **Number Generator** can produce bulk phone numbers filtered by are
 
 ## 🌍 Supported Countries
 
-### Full Offline Database (Instant Lookups)
-
-| Country             | Prefix Records | Data Includes                    |
-| ------------------- | -------------- | -------------------------------- |
-| 🇺🇸 United States  | 200,000+       | Carrier, Line Type, City, State  |
-| 🇨🇦 Canada         | 44,000+        | Carrier, Exchange Area, Province |
-| 🇬🇧 United Kingdom | 126,000+       | Carrier, Line Type               |
+Full offline coverage for the **United States, Canada, and the United Kingdom** (instant, no API needed), plus live and library-based lookups worldwide.
 
 ### Phonenumbers Library (60+ Countries)
 
@@ -291,7 +285,7 @@ The auto-save path is configurable per tab via the "Auto-save to:" field.
 
 ## 🔑 Licensing
 
-Hope Phone Intelligence uses a hardware-bound license system.
+Brain Carrier Lookup uses a hardware-bound license system.
 
 ### Trial Mode
 
@@ -304,7 +298,7 @@ Hope Phone Intelligence uses a hardware-bound license system.
 - **Unlimited** number processing and generation
 - All features unlocked
 - License is bound to your hardware (one device per license)
-- Purchase via [@brain_lead on Telegram](https://t.me/brain_lead)
+- Purchase via [@Brainleadbot on Telegram](https://t.me/Brainleadbot)
 
 ### License Activation
 
@@ -415,7 +409,7 @@ A: Check your internet connection. If the issue persists, contact [@brain_lead](
 
 **IMPORTANT: PLEASE READ THIS DISCLAIMER CAREFULLY BEFORE USING THIS SOFTWARE.**
 
-By downloading, installing, or using Hope Phone Intelligence (hereinafter referred to as "the Software"), you acknowledge that you have read, understood, and agree to be bound by the following terms:
+By downloading, installing, or using Brain Carrier Lookup (hereinafter referred to as "the Software"), you acknowledge that you have read, understood, and agree to be bound by the following terms:
 
 ### Purpose
 
@@ -492,11 +486,11 @@ This Disclaimer shall be governed by and construed in accordance with applicable
 | Channel                    | Link                                  |
 | -------------------------- | ------------------------------------- |
 | **Telegram**         | [@brain_lead](https://t.me/brain_lead) |
-| **Purchase License** | [@brain_lead](https://t.me/brain_lead) |
+| **Purchase License** | [@Brainleadbot](https://t.me/Brainleadbot) |
 | **Bug Reports**      | [@brain_lead](https://t.me/brain_lead) |
 
 ---
 
-**Hope Phone Intelligence v1.0** — Built by **Brain Lead**
+**Brain Carrier Lookup v1.0** — Built by **Brain Lead**
 
 © 2025 Brain Lead. All Rights Reserved. Unauthorized distribution is prohibited.
