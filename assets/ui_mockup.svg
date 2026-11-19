@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 540" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131e33"/>
+      <stop offset="100%" stop-color="#0d1524"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="drop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Main App Window Frame -->
+  <rect width="920" height="540" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5" filter="url(#drop)"/>
+
+  <!-- Top System Window Titlebar -->
+  <rect width="920" height="42" rx="14" fill="#0c1322"/>
+  <rect y="28" width="920" height="14" fill="#0c1322"/>
+  <line x1="0" y1="42" x2="920" y2="42" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="21" r="6" fill="#10b981"/>
+  <text x="460" y="26" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600">
+    Brain Carrier Lookup v2.5 · Official Telecom Intelligence Suite
+  </text>
+
+  <!-- App Header Bar with Jurisdiction & Telegram -->
+  <g transform="translate(25, 52)">
+    <rect width="870" height="52" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Jurisdiction Selector -->
+    <rect x="14" y="10" width="220" height="32" rx="6" fill="#0a0f1d" stroke="#334155" stroke-width="1"/>
+    <text x="26" y="30" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="13">🌍</text>
+    <text x="48" y="27" fill="#64748b" font-family="-apple-system, sans-serif" font-size="9" font-weight="700">TARGET JURISDICTION</text>
+    <text x="48" y="38" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">US · United States (FCC)</text>
+    <polygon points="218,24 226,24 222,30" fill="#94a3b8"/>
+
+    <!-- App Title in Header -->
+    <text x="250" y="33" fill="url(#goldAccent)" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">
+      📡 BRAIN CARRIER LOOKUP
+    </text>
+    <text x="460" y="33" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11.5">
+      v2.5 (MNP / Telecom Regulator Plan)
+    </text>
+
+    <!-- Support & Update Action Buttons -->
+    <rect x="730" y="12" width="126" height="28" rx="6" fill="#0284c7" fill-opacity="0.2" stroke="#0284c7" stroke-width="1"/>
+    <text x="793" y="30" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">
+      💬 @brain_lead
+    </text>
+  </g>
+
+  <!-- 5 Internal Workflow Tabs -->
+  <g transform="translate(25, 114)">
+    <!-- Tab 1: Carrier -->
+    <rect x="0" y="0" width="120" height="34" rx="6" fill="#131e33" stroke="#1e293b" stroke-width="1"/>
+    <text x="60" y="22" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">🏢 Carrier</text>
+
+    <!-- Tab 2: Line Type -->
+    <rect x="126" y="0" width="130" height="34" rx="6" fill="#131e33" stroke="#1e293b" stroke-width="1"/>
+    <text x="191" y="22" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">📶 Line Type</text>
+
+    <!-- Tab 3: Location -->
+    <rect x="262" y="0" width="125" height="34" rx="6" fill="#131e33" stroke="#1e293b" stroke-width="1"/>
+    <text x="324" y="22" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">📍 Location</text>
+
+    <!-- Tab 4: Combined (ACTIVE SELECTED TAB) -->
+    <rect x="393" y="0" width="150" height="34" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="468" y="22" text-anchor="middle" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="12.5" font-weight="800">🔗 Combined ★</text>
+
+    <!-- Tab 5: Generator -->
+    <rect x="549" y="0" width="130" height="34" rx="6" fill="#131e33" stroke="#1e293b" stroke-width="1"/>
+    <text x="614" y="22" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">🔢 Generator</text>
+  </g>
+
+  <!-- 4 Telecom Metric Counter Cards -->
+  <g transform="translate(25, 158)">
+    <!-- Wireless / Mobile Card -->
+    <rect x="0" y="0" width="206" height="66" rx="8" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="16" y="24" fill="#10b981" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">WIRELESS (MOBILE)</text>
+    <text x="16" y="52" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">6,842</text>
+    <text x="96" y="52" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11.5">68.4%</text>
+
+    <!-- Landline / Wireline Card -->
+    <rect x="221" y="0" width="206" height="66" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="237" y="24" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">LANDLINE / WIRELINE</text>
+    <text x="237" y="52" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">2,118</text>
+    <text x="317" y="52" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11.5">21.2%</text>
+
+    <!-- VoIP / Virtual Card -->
+    <rect x="442" y="0" width="206" height="66" rx="8" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="458" y="24" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">VOIP / VIRTUAL</text>
+    <text x="458" y="52" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">1,040</text>
+    <text x="538" y="52" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11.5">10.4%</text>
+
+    <!-- Total Processed Card -->
+    <rect x="663" y="0" width="207" height="66" rx="8" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="679" y="24" fill="#c084fc" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700">TOTAL RESOLVED</text>
+    <text x="679" y="52" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">10,000</text>
+    <text x="765" y="52" fill="#a855f7" font-family="-apple-system, sans-serif" font-size="11.5">100.0%</text>
+  </g>
+
+  <!-- Combined Tab Active Workspace (Split Input vs Results Table) -->
+  <g transform="translate(25, 234)">
+    <rect width="870" height="268" rx="8" fill="#080c14" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Left Controls Panel -->
+    <rect width="210" height="268" rx="8" fill="#0b1220"/>
+    <line x1="210" y1="0" x2="210" y2="268" stroke="#1e293b" stroke-width="1"/>
+    
+    <text x="18" y="26" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">DATA QUEUE</text>
+    <text x="18" y="46" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">10,000 Numbers</text>
+
+    <text x="18" y="76" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="600">EXTRACTION OPTIONS</text>
+    <text x="18" y="98" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11">☑ Append Carrier</text>
+    <text x="18" y="118" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11">☑ Append Line Type</text>
+    <text x="18" y="138" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11">☑ Append Location</text>
+    <text x="18" y="158" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11">☑ Map SMS Gateway</text>
+
+    <!-- Action Buttons -->
+    <rect x="18" y="180" width="174" height="32" rx="6" fill="#10b981"/>
+    <text x="105" y="200" text-anchor="middle" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">▶ START LOOKUP</text>
+
+    <rect x="18" y="220" width="84" height="28" rx="5" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="60" y="238" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">⏸ PAUSE</text>
+
+    <rect x="108" y="220" width="84" height="28" rx="5" fill="#0284c7" stroke="#0284c7" stroke-width="1"/>
+    <text x="150" y="238" text-anchor="middle" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">💾 EXPORT</text>
+
+    <!-- Right Telecom Results Grid -->
+    <g transform="translate(210, 0)">
+      <!-- Table Header -->
+      <rect width="660" height="32" rx="8" fill="#0f172a"/>
+      <rect y="24" width="660" height="8" fill="#0f172a"/>
+      <line x1="0" y1="32" x2="660" y2="32" stroke="#1e293b" stroke-width="1"/>
+      
+      <text x="20" y="21" fill="#64748b" font-family="Consolas, monospace" font-size="11" font-weight="700">PHONE NUMBER</text>
+      <text x="175" y="21" fill="#64748b" font-family="Consolas, monospace" font-size="11" font-weight="700">CARRIER BRAND</text>
+      <text x="325" y="21" fill="#64748b" font-family="Consolas, monospace" font-size="11" font-weight="700">LINE TYPE</text>
+      <text x="455" y="21" fill="#64748b" font-family="Consolas, monospace" font-size="11" font-weight="700">LOCATION</text>
+      <text x="560" y="21" fill="#64748b" font-family="Consolas, monospace" font-size="11" font-weight="700">SMS GATEWAY</text>
+
+      <!-- Row 1: Verizon Wireless Mobile -->
+      <rect y="33" width="660" height="36" fill="#0a0f1d"/>
+      <text x="20" y="56" fill="#ffffff" font-family="Consolas, monospace" font-size="12">+1 (212) 555-0142</text>
+      <text x="175" y="56" fill="#f59e0b" font-family="Consolas, monospace" font-size="12" font-weight="600">Verizon Wireless</text>
+      <text x="325" y="56" fill="#10b981" font-family="Consolas, monospace" font-size="11">● Wireless (Mobile)</text>
+      <text x="455" y="56" fill="#94a3b8" font-family="Consolas, monospace" font-size="12">NY · New York</text>
+      <text x="560" y="56" fill="#38bdf8" font-family="Consolas, monospace" font-size="11">@vtext.com</text>
+
+      <!-- Row 2: AT&T Mobility -->
+      <rect y="70" width="660" height="36" fill="#0d1424"/>
+      <text x="20" y="93" fill="#ffffff" font-family="Consolas, monospace" font-size="12">+1 (312) 555-0188</text>
+      <text x="175" y="93" fill="#38bdf8" font-family="Consolas, monospace" font-size="12" font-weight="600">AT&amp;T Mobility</text>
+      <text x="325" y="93" fill="#10b981" font-family="Consolas, monospace" font-size="11">● Wireless (Mobile)</text>
+      <text x="455" y="93" fill="#94a3b8" font-family="Consolas, monospace" font-size="12">IL · Chicago</text>
+      <text x="560" y="93" fill="#38bdf8" font-family="Consolas, monospace" font-size="11">@txt.att.net</text>
+
+      <!-- Row 3: T-Mobile USA -->
+      <rect y="107" width="660" height="36" fill="#0a0f1d"/>
+      <text x="20" y="130" fill="#ffffff" font-family="Consolas, monospace" font-size="12">+1 (415) 555-0199</text>
+      <text x="175" y="130" fill="#ec4899" font-family="Consolas, monospace" font-size="12" font-weight="600">T-Mobile USA</text>
+      <text x="325" y="130" fill="#10b981" font-family="Consolas, monospace" font-size="11">● Wireless (Mobile)</text>
+      <text x="455" y="130" fill="#94a3b8" font-family="Consolas, monospace" font-size="12">CA · San Francisco</text>
+      <text x="560" y="130" fill="#38bdf8" font-family="Consolas, monospace" font-size="11">@tmomail.net</text>
+
+      <!-- Row 4: Bandwidth VoIP -->
+      <rect y="144" width="660" height="36" fill="#0d1424"/>
+      <text x="20" y="167" fill="#ffffff" font-family="Consolas, monospace" font-size="12">+1 (206) 555-0123</text>
+      <text x="175" y="167" fill="#c084fc" font-family="Consolas, monospace" font-size="12" font-weight="600">Bandwidth.com</text>
+      <text x="325" y="167" fill="#f59e0b" font-family="Consolas, monospace" font-size="11">▲ VoIP / Virtual</text>
+      <text x="455" y="167" fill="#94a3b8" font-family="Consolas, monospace" font-size="12">WA · Seattle</text>
+      <text x="560" y="167" fill="#64748b" font-family="Consolas, monospace" font-size="11">N/A</text>
+
+      <!-- Row 5: Comcast Landline -->
+      <rect y="181" width="660" height="36" fill="#0a0f1d"/>
+      <text x="20" y="204" fill="#ffffff" font-family="Consolas, monospace" font-size="12">+1 (305) 555-0177</text>
+      <text x="175" y="204" fill="#94a3b8" font-family="Consolas, monospace" font-size="12" font-weight="600">Comcast Cable</text>
+      <text x="325" y="204" fill="#38bdf8" font-family="Consolas, monospace" font-size="11">■ Landline (Fixed)</text>
+      <text x="455" y="204" fill="#94a3b8" font-family="Consolas, monospace" font-size="12">FL · Miami</text>
+      <text x="560" y="204" fill="#64748b" font-family="Consolas, monospace" font-size="11">N/A</text>
+
+      <!-- Row Status Bar -->
+      <line x1="0" y1="228" x2="660" y2="228" stroke="#1e293b" stroke-width="1"/>
+      <text x="20" y="250" fill="#10b981" font-family="Consolas, monospace" font-size="11.5">Lookup Complete: 10,000 / 10,000 (100.0%) · Speed: 14,200/sec</text>
+      <text x="640" y="250" text-anchor="end" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">brainlead.dev · @brain_lead</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+*.dat
+*.enc
+*.json
+*.log
+tmp/
